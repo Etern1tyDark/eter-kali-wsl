@@ -2,7 +2,7 @@
 
 Mainly consists of **Tokyo Night** color schemes/theming. Currently running:
 
-- zshrc
+- zshrc w/ omz
 - vimrc
 - tmux
 - Windows Terminal (Tokyo Night theme - FiraCode NF)
