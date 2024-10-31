@@ -5,8 +5,10 @@ Mainly consists of **Tokyo Night** color schemes/theming. Currently running:
 - zshrc
 - vimrc
 - tmux
-- Windows Terminal
+- Windows Terminal (Tokyo Night theme - FiraCode NF)
 - GlazeWM w/ Zebar (defaults)
+
+**NOTE** - Use `yadm` (yet another dotfiles manager) for ease of use
 
 ## Gallery
 
