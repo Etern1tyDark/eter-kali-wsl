@@ -78,6 +78,16 @@ alignment = "right"
 overflow = "hide"
 type = "prompt"
 
+    [[blocks.segments]]
+  	foreground = "#73daca"
+  	style = "plain"
+  	template = " {{ .FormattedMs }} "
+  	type = "executiontime"
+
+    	[blocks.segments.properties]
+    	style = "austin"
+    	threshold = 1000
+
   [[blocks.segments]]
   type = "environment"
   style = "plain"
@@ -100,7 +110,8 @@ type = "prompt"
   type = "python"
   style = "plain"
   foreground = "p:terminal-yellow"
-  template = " {{ .Full }} {{ if .Venv }}{{ .Venv }}{{ end }}"
+  #template = " {{ .Full }} - {{ if .Venv }}{{ .Venv }}{{ end }}"
+  template = "{{ .Venv }}"
 
   	[properties]
 	fetch_virtual_env = true

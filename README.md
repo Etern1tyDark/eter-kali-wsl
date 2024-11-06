@@ -6,8 +6,10 @@ Mainly consists of **Tokyo Night** color schemes/theming (omp - edited and termi
   - zinit - plugin manager
   - zoxide - better cd
 - oh-my-posh
-- vimrc
+- vimrcs
 - tmux
+- miniforge (for SageMath)
+
 - Windows Terminal 
   - FiraCode NF
 - GlazeWM w/ Zebar (defaults)
