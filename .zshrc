@@ -8,6 +8,8 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
+setopt autocd
+
 # zsh plugins with zinit
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -62,10 +64,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 
 # aliases
-alias ls='ls -CF --color'
-alias ll='ls -l'
-alias la='ls -A'
-alias lla='ls -lA'
+alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions' # better ls
+alias ll='eza -l'
+alias la='eza -A'
+alias lla='eza -lA --icons=always --git'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
