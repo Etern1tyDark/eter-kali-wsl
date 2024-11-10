@@ -79,6 +79,8 @@ alias nf='neowofetch'
 alias c='clear'
 alias q='exit'
 
+alias wcmd='cmd.exe /c'
+alias ghidra='cd /mnt/c/Data/apps/ghidra_11.2_PUBLIC/ && wcmd ghidraRun.bat; cd ~'
 alias wcode='cmd.exe /c code'
 
 # fzf color scheme
