@@ -86,13 +86,7 @@ type = "prompt"
 
     	[blocks.segments.properties]
     	style = "austin"
-    	threshold = 1000
-
-  [[blocks.segments]]
-  type = "environment"
-  style = "plain"
-  foreground = "p:pistachio-green"
-  template = " {{ .Full }} "
+    	threshold = 0
 
   [[blocks.segments]]
   type = "node"
@@ -111,7 +105,7 @@ type = "prompt"
   style = "plain"
   foreground = "p:terminal-yellow"
   #template = " {{ .Full }} - {{ if .Venv }}{{ .Venv }}{{ end }}"
-  template = "{{ .Venv }}"
+  template = " env - {{ .Venv }}"
 
   	[properties]
 	fetch_virtual_env = true
@@ -134,14 +128,14 @@ type = "prompt"
   foreground = "p:light-sky-blue"
   template = "ﳑ {{ .Full}}"
 
-  [[blocks.segments]]
-  type = "command"
-  style = "plain"
-  foreground = "p:white-blue"
+  # [[blocks.segments]]
+  # type = "command"
+  # style = "plain"
+  # foreground = "p:white-blue"
 
-    [blocks.segments.properties]
-    command = "git log --pretty=format:%cr -1 || date +%H:%M:%S"
-    shell = "bash"
+  #   [blocks.segments.properties]
+  #   command = "git log --pretty=format:%cr -1 || date +%H:%M:%S"
+  #   shell = "bash"
 
 [[blocks]]
 alignment = "left"

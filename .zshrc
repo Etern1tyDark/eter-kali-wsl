@@ -25,6 +25,7 @@ zinit snippet OMZP::command-not-found
 autoload -Uz compinit && compinit
 zinit cdreplay -q
 
+# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/emodipt.omp.json)"
 # activate omp with custom theme
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/tokyonight-edited.toml)"
 
@@ -92,6 +93,7 @@ export FZF_DEFAULT_OPTS="
 	--color=pointer:#c4a7e7,marker:#eb6f92,prompt:#908caa"
 
 eval "$(zoxide init --cmd cd zsh)"
+eval $(ssh-agent)
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -134,3 +136,5 @@ if [ -f "/home/etern1ty/miniforge3/etc/profile.d/mamba.sh" ]; then
     . "/home/etern1ty/miniforge3/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
+#
+clear
