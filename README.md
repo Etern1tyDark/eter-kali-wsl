@@ -12,9 +12,6 @@ Mainly consists of **Tokyo Night** color schemes/theming. Currently running:
 - tmux > [Tokyo Night](https://github.com/janoamaral/tokyo-night-tmux)
 - miniforge (for SageMath)
 ---------------------------------------
-- Windows Terminal > [Tokyo Night](https://github.com/jiyometrik/tokyonight-windows-terminal/blob/master/tokyonight-night.json)
-  - FiraCode NF
-- GlazeWM w/ Zebar > defaults
 
 **NOTE** - Use `yadm` (yet another dotfiles manager) for ease of use/access
 
